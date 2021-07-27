@@ -1,0 +1,777 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+/* header {
+    scroll-behavior: smooth;
+  } */
+
+
+body {
+    font-family: 'open sans';
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo {
+    color: #2a3b73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background:  #2a3b73;
+    /* fallback for old browsers */
+    background-image: url(../img/fondo.png);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: url(../img/fondo.png);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    display: inline-block;
+    padding: 6px;
+    margin: 5px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+
+}
+
+nav > a:hover{
+   text-decoration: none;
+    background: white;
+    color: black;
+}
+
+header .textos-header{
+    display: flex;
+    height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.textos-header h3{
+    font-size: 86px;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* About us */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background:  #2a3b73;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galeria */
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.portafolio .contenedor .container-cover #carouselExampleIndicators ol li{
+   background-color: #2a3b73;
+   border-radius: 50%;
+  
+}
+
+.portafolio .contenedor .container-cover #carouselExampleIndicators span{
+    background-color: #2a3b73;
+    border-radius: 30%;
+ }
+
+
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(6, 8, 132, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/* Clients */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.cards .card{
+    background:  #2a3b73;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+}
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*  Our team */
+
+.about-services{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+
+
+/* btn ir arriba */
+
+#button-up{
+    width: 50px;
+    height: 50px;
+    background: #25D366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 88px;
+    right: 20px;
+    cursor: pointer;
+    border: 4px solid #25D366;
+    transition:all 300ms ease ;
+    transform: scale(0);
+}
+
+#button-up i{
+    background: #25D366;
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color:#33af3e;
+    opacity: 0.8;
+}
+
+/* iconos de redes sociales flotantes */
+
+.container-redes{
+    position: fixed;
+    bottom: 84px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    z-index: 1;
+}
+
+.container-redes a{
+    margin-top: 4px;
+}
+
+.container-redes img{
+    width: 60px;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: all 300ms;
+    text-decoration: none;
+}
+
+.container-redes a:hover img{
+    background: #33af3e;
+    opacity: 0.8;
+}
+
+
+.ubicacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: -10px 0 30px -20px rgb(255, 253, 253);
+}
+
+
+/* enviar */
+
+.contact-form {
+    padding: 55px 65px;
+    background: #afabab;
+    min-height: 600px;
+    margin-top: 60px;
+}
+
+.contact-form form input {
+    width: 100%;
+    background: #fff;
+    border: none;
+    height: 60px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.contact-form form textarea {
+    width: 100%;
+    background: #fff;
+    border: none;
+    min-height: 120px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.contact-form form input[type="submit"] {
+    background: #2a3b73;;
+    color: white;
+    border-radius: 8px;
+    width: 190px;
+    margin: 15px auto 0;
+    font-size: 19px;
+    font-weight: 300;
+    float: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contact-form form input[type="submit"]:hover,
+.contact-form form input[type="submit"]:focus {
+    background: rgba(57, 206, 82, 0.527);
+    color: #fff;
+    transition: ease all 0.5s;
+}
+
+.container h3{
+    text-align: center;
+    color:  white;
+}
+
+.container {
+    background: #2a3b73;
+}
+    
+
+/* Footer - pie de pagina */
+
+
+/* Estilo del footer base */
+.container-footer{
+    width: 100%;
+    padding: 40px 0;
+    background-color: #2a3b73;
+    margin-top: 40px;
+}
+
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo del logo en el footer pie de pagina centar */
+.container-footer footer .logo-footer{
+   text-align: center;
+}
+
+.container-footer footer .redes-footer a{
+    text-decoration: none;
+}
+
+
+/* Estilo del logo en el footer pie de pagina tamaño */
+.container-footer footer .logo-footer img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+/* Estilo del logo en el footer pie de pagina redes centar*/
+.container-footer footer .redes-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo del logo en el footer pie de pagina redes diseño */
+.container-footer footer .redes-footer .icon-redes-footer{
+  font-size: 20px;
+  margin: 10px;
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: #a2a2a2;
+}
+
+/* Estilos de los iconos */
+.container-footer footer .redes-footer .fa-facebook-f{
+    background: #2957e2;
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-facebook-f{
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-facebook-messenger{
+    background: linear-gradient(to bottom right, #476ff3, #3744ee, #c950da, #e274b4, #c53069);
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-facebook-messenger {
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-instagram{
+    background: linear-gradient(to bottom right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-instagram {
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-youtube{
+   background: red;
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-youtube {
+	animation: icono .5s ease;
+}
+
+.container-footer footer .redes-footer .fa-telegram-plane{
+    background: #599ffa;
+    color: #ffff;
+}
+
+.container-footer .redes-footer:hover .fa-telegram-plane {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+
+/* Estilo del footer pie de pagina del hr y h4 */
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background:  white;
+}
+
+.container-footer footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color:  white;
+    font-weight: 500px;
+    font-size: 18px;
+}
+
+.container-footer footer h4 a{
+
+    color: #25D366;
+    font-size: 18px;
+
+}
+
+/* responsive  */
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    header .textos-header h1{
+        font-size: 30px;
+    }
+
+    header .textos-header h2{
+        font-size: 30px;
+    }
+
+    header .textos-header h3{
+        font-size: 70px;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    header nav a{
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    /* .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }*/
+
+    header .textos-header{
+        height: 250px;
+    }
+
+    header .textos-header h1{
+        font-size: 30px;
+    }
+
+    header .textos-header h2{
+        font-size: 20px;
+    }
+
+    header .textos-header h3{
+        font-size: 60px;
+    }
+
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    .container-footer footer .redes-footer  {
+    
+       font-size: 15px;
+    
+    }
+
+   
+}
+
+@media screen and (max-width:400px){
+
+    header .textos-header{
+        
+        height: 230px;
+
+    }
+
+    header .textos-header h1{
+        font-size: 20px;
+    }
+
+    header .textos-header h2{
+        font-size: 20px;
+    }
+
+    header .textos-header h3{
+        font-size: 60px;
+    }
+
+
+}
+
+@media screen and (max-width:300px){
+
+    header .textos-header{
+        
+        height: 250px;
+
+    }
+}
